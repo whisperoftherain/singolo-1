@@ -6,8 +6,13 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
- <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+ <!-- my styles -->
  <link rel="stylesheet" href="singolo1.css">
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+ <!-- slider styles -->
+ <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+ <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
  <title>SINGOLO</title>
 </head>
@@ -29,6 +34,53 @@
   </div>
  </header>
 
+ <main>
+  <section class="slider">
+   <div class="swiper-container">
+    <div class="swiper-wrapper">
+     <div class="swiper-slide">
+      <div class="swiper__slide-item">
+       <div class="phone">
+        <div class="phone__shadow">
+         <div class="phone__frame">
+          <div class="phone__cam"></div>
+          <div class="phone__speaker"></div>
+          <img src="" alt="phone's 'display" class="phone__display">
+          <div class="phone__btn"></div>
+         </div>
+        </div>
+       </div>
+       <div class="phone">
+        <div class="phone__shadow">
+         <div class="phone__frame">
+          <div class="phone__cam"></div>
+          <div class="phone__speaker"></div>
+          <img src="" alt="phone's 'display" class="phone__display">
+          <div class="phone__btn"></div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+   </div>
+  </section>
+ </main>
+
+ <!-- slider js -->
+ <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+ <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+ <script>
+  var swiper = new Swiper('.swiper-container', {
+   loop: true,
+   navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+   },
+  });
+ </script>
 </body>
 
 </html>
