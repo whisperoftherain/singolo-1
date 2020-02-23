@@ -69,6 +69,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 :focus {
@@ -86,46 +88,42 @@ body {
   font-weight: 400;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+.singolo a {
   text-decoration: none;
   color: initial;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 
-.container {
+.singolo .container {
   width: 100%;
   max-width: 1020px;
   padding: 0 40px;
   margin: 0 auto;
 }
 
-.header {
+.singolo .header {
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
 }
 
-.header a {
+.singolo .header a {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.header a:not(.header__logo-link):hover {
+.singolo .header a:not(.header__logo-link):hover {
   opacity: .5;
 }
 
-.header a.header__logo-link:hover {
+.singolo .header a.header__logo-link:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.header__wrapper {
+.singolo .header__wrapper {
   padding: 34px 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,11 +136,11 @@ a {
           justify-content: space-between;
 }
 
-.header__logo {
+.singolo .header__logo {
   font-weight: normal;
 }
 
-.header__logo a {
+.singolo .header__logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,12 +153,12 @@ a {
   color: #fff;
 }
 
-.header__logo a sup {
+.singolo .header__logo a sup {
   font-size: 25px;
   color: #f06c64;
 }
 
-.header__link {
+.singolo .header__link {
   position: relative;
   display: inline-block;
   margin-top: 12px;
@@ -170,19 +168,78 @@ a {
   letter-spacing: -0.2px;
 }
 
-.header__link-active {
+.singolo .header__link-active {
   color: #f06c64;
 }
 
-.header__link:not(:first-child) {
+.singolo .header__link:not(:first-child) {
   margin-left: 26px;
 }
 
-.header__link:not(:first-child):before {
+.singolo .header__link:not(:first-child):before {
   content: '\2219';
   position: absolute;
   top: 0;
   left: -17px;
   color: #494e62;
+}
+
+.singolo .swiper {
+  padding: 32px 0 38px;
+  background-color: #f06c64;
+  border-bottom: 6px solid #ea676b;
+}
+
+.singolo .swiper__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.singolo .swiper__wrapper {
+  width: calc(100% - 33px);
+}
+
+.singolo .swiper__wrapper .iphone {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.singolo .swiper__wrapper .iphone__ver {
+  margin-left: 38px;
+  margin-top: 2px;
+}
+
+.singolo .swiper__wrapper .iphone__hor {
+  margin-left: 43px;
+  margin-top: -5px;
+}
+
+.singolo .swiper__button {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.singolo .swiper__button:hover {
+  opacity: .5;
+}
+
+.singolo .swiper__button-prev {
+  -webkit-transform: translateX(1px);
+          transform: translateX(1px);
+}
+
+.singolo .swiper__button-next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=singolo1.css.map */
