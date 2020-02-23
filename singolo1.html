@@ -35,37 +35,28 @@
  </header>
 
  <main>
-  <section class="slider">
+  <section class="swiper">
    <div class="container">
-    <div class="swiper-container">
+    <div class="swiper__container">
+      <!-- "swiper-wrapper" and "swiper-slide" need for cnd js slider, sorry -->
      <div class="swiper-wrapper">
       <div class="swiper-slide">
        <div class="swiper__slide-item">
-        <div class="phone">
-         <div class="phone__shadow">
-          <div class="phone__frame">
-           <div class="phone__cam"></div>
-           <div class="phone__speaker"></div>
-           <img src="" alt="phone's 'display" class="phone__display">
-           <div class="phone__btn"></div>
-          </div>
-         </div>
+        <div class="iphone">
+          <img src="/singolo/assets/image/png/iPhone-Vertical.png" alt="iPhone Vertical">
         </div>
-        <div class="phone">
-         <div class="phone__shadow">
-          <div class="phone__frame">
-           <div class="phone__cam"></div>
-           <div class="phone__speaker"></div>
-           <img src="" alt="phone's 'display" class="phone__display">
-           <div class="phone__btn"></div>
-          </div>
-         </div>
+        <div class="iphone">
+          <img src="/singolo/assets/image/png/iPhone-Horizontal.png" alt="iPhone-Horizontal">
         </div>
        </div>
       </div>
      </div>
-     <div class="swiper-button-prev"></div>
-     <div class="swiper-button-next"></div>
+     <div class="swiper__button-prev">
+      <img src="/singolo/assets/image/png/chev.png" alt="arrow-left">
+     </div>
+     <div class="swiper__button-next">
+       <img src="/singolo/assets/image/png/chev.png" alt="arrow-right">
+     </div>
     </div>
    </div>
   </section>
@@ -95,11 +86,11 @@
  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
  <script>
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.swiper__container', {
    loop: true,
    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper__button-next',
+    prevEl: '.swiper__button-prev',
    },
   });
  </script>
