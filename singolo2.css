@@ -381,6 +381,7 @@ body {
 }
 
 .singolo .portfolio__grid-item {
+  display: none;
   margin: 10px;
   width: 100%;
   height: 100%;
@@ -391,10 +392,97 @@ body {
   cursor: pointer;
 }
 
+.singolo .portfolio__grid-item:nth-child(-n+12) {
+  display: block;
+}
+
 .singolo .portfolio__grid-item:hover {
   -webkit-box-shadow: 0px 0px 8px 1px #c5c5c5;
           box-shadow: 0px 0px 8px 1px #c5c5c5;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.singolo .about {
+  padding: 67px 0;
+  color: #767e9e;
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #fff;
+}
+
+.singolo .about__head {
+  margin-bottom: 33px;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 17.86px;
+}
+
+.singolo .about__head-sub {
+  margin-bottom: 49px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.singolo .about__staff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -10px;
+}
+
+.singolo .about__staff-item {
+  margin: 0 10px;
+}
+
+.singolo .about__staff-photo {
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
+}
+
+.singolo .about__staff-name {
+  margin: 19px 0 18px;
+  color: #666d89;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 17.86px;
+  max-width: 300px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.singolo .about__staff-desc {
+  margin-bottom: 28px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21.56px;
+  word-wrap: break-word;
+}
+
+.singolo .social__item {
+  margin-right: 8px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #666d89;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.singolo .social__item:hover {
+  border: 0 solid transparent;
 }
 /*# sourceMappingURL=singolo2.css.map */
