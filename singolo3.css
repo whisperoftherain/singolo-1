@@ -711,7 +711,6 @@ body {
 }
 
 .singolo .social__item {
-  margin-right: 8px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -729,7 +728,35 @@ body {
   transition: .25s ease-in-out;
 }
 
+.singolo .social__item:not(:last-child) {
+  margin-right: 5px;
+}
+
 .singolo .social__item:hover {
   border: 0 solid transparent;
+}
+
+.singolo .footer {
+  padding: 21px 0 22px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #666d89;
+  background-color: #2d303a;
+}
+
+.singolo .footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.singolo .footer__copyright {
+  letter-spacing: -0.1px;
 }
 /*# sourceMappingURL=singolo3.css.map */
